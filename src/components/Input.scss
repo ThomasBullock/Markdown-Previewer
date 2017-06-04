@@ -1,0 +1,16 @@
+@import './base-styles/styles.scss';
+
+.input {
+	flex: 1 1 50%;
+	padding: $base-spacing;
+
+	@include elem('heading') {
+		color: $oil;
+	}
+
+	@include elem('textfield') {
+
+		width: 100%;
+	}
+
+}

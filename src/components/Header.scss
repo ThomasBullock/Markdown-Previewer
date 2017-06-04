@@ -1,0 +1,9 @@
+@import './base-styles/styles.scss';
+
+header {
+	color: $smoke;
+	width: 100%;
+	height: 100px;
+	background: $oil;
+	box-shadow: 0 2px 1px $black;
+}
