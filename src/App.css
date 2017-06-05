@@ -198,36 +198,5 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
-.App {
-  text-align: center; }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
-
-.App-intro {
-  font-size: large; }
-
-section {
-  background: magenta; }
-
-.triangle {
-  min-width: 100px;
-  min-height: 100px;
-  border-style: solid;
-  height: 0;
-  width: 0;
-  border-color: transparent transparent #b25c9c;
-  border-width: 0 1rem 1rem; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+body {
+  background: linear-gradient(to top, #7FDBFF, rgba(127, 219, 255, 0.1)); }

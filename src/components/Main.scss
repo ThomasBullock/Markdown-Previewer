@@ -1,6 +1,60 @@
 @import './base-styles/styles.scss';
 
 main {
-	background: $vapor;
 	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.input {
+	flex: 1 1 100%;
+	padding: $base-spacing;
+
+	@include elem('heading') {
+		color: $oil;
+	}
+
+	@include elem('textfield') {
+		width: 100%;
+	}
+
+	@include elem('clear') {
+		box-shadow: 0 2px 1px $black;
+	}
+
+}
+
+.output {
+	flex: 1 1 100%;
+	padding: $base-spacing;
+
+	@include elem('heading') {
+		color: $oil;
+	}
+
+	@include elem('field') {
+		border-radius: 3px;
+		padding: $base-spacing;
+		width: 100%;
+		background: $white-smoke;
+		border: solid 1px $gainsboro;
+		min-height: 200px;
+		// box-shadow: 0 1px 2px $base;
+	}
+}
+
+/* ================================= 
+  DESKTOP
+==================================== */	
+
+@media screen and (min-width: 901px) {
+	
+	main {
+		flex-wrap: nowrap;
+	}
+
+	.input, .output {
+		flex: 1 1 50%;
+	} 
+
 }

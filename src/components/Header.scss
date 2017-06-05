@@ -1,9 +1,19 @@
 @import './base-styles/styles.scss';
 
-header {
+.header {
+	display: flex;
+	justify-content: center;	
 	color: $smoke;
 	width: 100%;
-	height: 100px;
 	background: $oil;
+	padding: $base-spacing;
 	box-shadow: 0 2px 1px $black;
+
+	@include elem('title') {
+		padding: 0;
+		margin: 0;
+		// flex: 1 1 100%;
+		height: 100%;
+	}
 }
+

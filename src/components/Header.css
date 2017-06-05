@@ -198,9 +198,15 @@ hr {
   border-top: 0;
   margin: 1.5em 0; }
 
-header {
+.header {
+  display: flex;
+  justify-content: center;
   color: #EEEEEE;
   width: 100%;
-  height: 100px;
   background: #333333;
+  padding: 1.5em;
   box-shadow: 0 2px 1px #000000; }
+  .header__title {
+    padding: 0;
+    margin: 0;
+    height: 100%; }

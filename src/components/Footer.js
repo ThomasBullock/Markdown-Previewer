@@ -1,36 +1,34 @@
 import React, { Component } from 'react';
 import './Footer.css';
+import fccIcon from '../img/freecodecamp.png';
+import github from '../img/github.png';
 
 class Footer extends Component {
 	render() {
 		return(
 <footer className="footer" role="contentinfo">
-  <div className="footer-logo">
-    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image"/>
+  <div className="footer__logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo"/>
   </div>
-  <div className="footer-links">
     <ul>
-      <li><h3>Content</h3></li>
-      <li><a href="javascript:void(0)">About</a></li>
-      <li><a href="javascript:void(0)">Contact</a></li>
-      <li><a href="javascript:void(0)">Products</a></li>
+      <li>See this project on <a href="https://github.com/ThomasBullock/Markdown-Previewer">Github</a></li>
+      <li>This web app uses <a href="https://github.com/chjj/marked">Marked</a></li>
     </ul>
-    <ul>
-      <li><h3>Follow Us</h3></li>
-      <li><a href="javascript:void(0)">Facebook</a></li>
-      <li><a href="javascript:void(0)">Twitter</a></li>
-      <li><a href="javascript:void(0)">YouTube</a></li>
-    </ul>
-    <ul>
-      <li><h3>Legal</h3></li>
-      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-      <li><a href="javascript:void(0)">Privacy Policy</a></li>
-    </ul>
-  </div>
 
-  <hr/>
+    <div className="footer-secondary-links">
+      <ul>
+        <li>Created by Thomas Bullock as part of The Free Code Camp Data Visualisation Certfication</li>
+      </ul>
 
-  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+      <ul className="footer-social">
+        <li><a href="https://github.com/ThomasBullock">
+          <img src={github} alt="Github"/>
+          </a></li>
+        <li><a href="https://www.freecodecamp.com/thomasbullock">
+          <img src={fccIcon} alt="Free Code Camp"/>
+        </a></li>
+      </ul>
+    </div>
 </footer>
 		)
 	}

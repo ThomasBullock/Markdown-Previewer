@@ -4,8 +4,8 @@ import './Header.css';
 class Header extends Component {
 	render() {
 		return(
-			<header>
-				<h1>Markdown Previewer</h1>
+			<header className="header">
+				<h1 className="header__title">Mots Markdown Previewer</h1>
 			</header>
 		);
 	}

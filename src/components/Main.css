@@ -199,5 +199,37 @@ hr {
   margin: 1.5em 0; }
 
 main {
-  background: #F6F6F6;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
+
+.input {
+  flex: 1 1 100%;
+  padding: 1.5em; }
+  .input__heading {
+    color: #333333; }
+  .input__textfield {
+    width: 100%; }
+  .input__clear {
+    box-shadow: 0 2px 1px #000000; }
+
+.output {
+  flex: 1 1 100%;
+  padding: 1.5em; }
+  .output__heading {
+    color: #333333; }
+  .output__field {
+    border-radius: 3px;
+    padding: 1.5em;
+    width: 100%;
+    background: #F5F5F5;
+    border: solid 1px #DDDDDD;
+    min-height: 200px; }
+
+/* ================================= 
+  DESKTOP
+==================================== */
+@media screen and (min-width: 901px) {
+  main {
+    flex-wrap: nowrap; }
+  .input, .output {
+    flex: 1 1 50%; } }
