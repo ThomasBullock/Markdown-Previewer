@@ -2,6 +2,7 @@
   "name": "markdown-previewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://thomasbullock.github.io/Markdown-Previewer",
   "dependencies": {
     "marked": "^0.3.6",
     "react": "^15.5.4",
